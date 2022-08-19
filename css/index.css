@@ -10,14 +10,15 @@
 
 }
 
-
-
+.nav-bar{
+    display: none;
+}
 nav{
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
     height: 18vh;
     align-items: center;
+    margin: auto;
 }
 
 nav > img{
@@ -28,15 +29,12 @@ nav > img{
 .nav-items{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     flex: 2;
     font-size: 22px;
     gap:55px;
-    /* margin: 25px; */
-    
 
 }
-
 
 .nav-item{
     font-weight: 400;
@@ -71,6 +69,11 @@ nav > img{
     background-color: transparent;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 
+}
+
+.ac{
+    
+    margin-left : 150px;
 }
 
 .discount-content  {
@@ -189,4 +192,62 @@ nav > img{
 
 .sub-headline{
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        /* border: 0.1px solid pink; */
+    }
+
+    nav{
+        gap: x;
+        height: 10vh;
+    }
+
+    .nav-bar{
+        display: block;
+        margin-left: 10px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .logo , .nav-logo{
+        height: 30px;
+    }
+
+    .intro-section{
+        flex-direction: column-reverse;
+    }
+
+    .headphone{
+        display: block;
+        position: static;
+        width: 350px;
+    }
+
+    .left-section{
+        margin: auto;
+        text-align: center;
+    }
+
+    .new{
+        padding-left: 30px;
+    }
+
+    .action-btn{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .ac{
+        margin-top: 20px;
+       margin-left: 100px;
+    }
+
+    .dots{
+        margin: auto;
+        padding-left: 100px;
+    }
 }
